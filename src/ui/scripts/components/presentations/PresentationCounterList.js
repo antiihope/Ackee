@@ -53,7 +53,7 @@ const PresentationCounterList = (props) => {
 						barWidth: proportionalWidth(item),
 						counterWidth,
 						count: props.formatter(item.count),
-						url: item.url,
+						url:  decodeURIComponent(item.url),
 						text: item.text,
 					})
 				)),
