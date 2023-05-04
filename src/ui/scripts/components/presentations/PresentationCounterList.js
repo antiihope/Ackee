@@ -54,7 +54,7 @@ const PresentationCounterList = (props) => {
 						counterWidth,
 						count: props.formatter(item.count),
 						url:  decodeURIComponent(item.url),
-						text: item.text,
+						text: decodeURIComponent(item.text),
 					})
 				)),
 			),
